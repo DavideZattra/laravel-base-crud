@@ -29,7 +29,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -40,7 +40,25 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $comic = new Comic();
+
+        //Metodo manuale
+        // $comic->title = $data['title'];
+        // $comic->description = $data['description'];
+        // $comic->author = $data['author'];
+        // $comic->year = $data['year'];
+        // $comic->url = $data['url']; 
+
+        // Metodo Fill (inserire sempre i fillable)
+        // $comic->fill($data);
+
+        // Metodo Create (inserire sempre i fillable)
+        $comic = Comic::create($data);
+        $comic->save();
+
+        return redirect()->route('comics.show', $comic);
     }
 
     /**
