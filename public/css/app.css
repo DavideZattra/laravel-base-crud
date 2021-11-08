@@ -11243,3 +11243,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#comic-list {
+  margin-bottom: 50px;
+}
+#comic-list .comic-card {
+  margin-top: 50px;
+}
+#comic-list .comic-card .comic-description {
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
