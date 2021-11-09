@@ -31,8 +31,9 @@
             
         </div>
 
+        
         <button type="reset">resetta i campi</button>
-        <button type="submit">inserisci il nuovo ospite</button>
+        <button type="submit">inserisci il nuovo Fumetto</button>
         
     </form>
 @endsection
